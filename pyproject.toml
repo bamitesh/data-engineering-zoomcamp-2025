@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "data-engineering-zoomcamp-2025"
+version = "0.1.0"
+description = "Data Engineering Zoomcamp - Cohort 2025"
+authors = ["bamitesh <b.amitesh@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
