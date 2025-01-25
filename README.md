@@ -58,26 +58,58 @@ This data engineering project is part of the 2025 cohort program. It covers vari
 - Familiarity with SQL
 - Basic knowledge of cloud computing concepts
 
+Certainly! I'll update the README to use Poetry for setting up the project instead of venv. Here's the updated Setup section for your root README:
+
+**File: /Users/amiteshbhattacharya/PycharmProjects/data-engineering-zoomcamp-2025/README.md**
+
+```markdown
+[... previous content ...]
+
 ## Setup
 
 1. Clone this repository:
-   ```
+   ```bash
    git clone https://github.com/yourusername/data-engineering-zoomcamp-2025.git
    ```
+
 2. Navigate to the project directory:
-   ```
+   ```bash
    cd data-engineering-zoomcamp-2025
    ```
-3. Set up a virtual environment (optional but recommended):
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-4. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
+
+3. Install Poetry (if not already installed):
+   ```bash
+   curl -sSL https://install.python-poetry.org | python3 -
    ```
 
+4. Install project dependencies using Poetry:
+   ```bash
+   poetry install
+   ```
+
+5. Activate the Poetry virtual environment:
+   ```bash
+   poetry shell
+   ```
+
+
+## Using Poetry
+
+- To add new dependencies:
+  ```bash
+  poetry add package_name
+  ```
+
+- To update dependencies:
+  ```bash
+  poetry update
+  ```
+
+- To run a Python script within the Poetry environment:
+  ```bash
+  poetry run python your_script.py
+  ```
+  
 ## Project Structure
 
 ```
