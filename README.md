@@ -18,39 +18,36 @@ This data engineering project is part of the 2025 cohort program. It covers vari
 
 ## Course Modules
 
-### Module 1: [Introduction to Data Engineering](./modules/module1/README.md)
-- Overview of data engineering
-- Setting up the development environment
-- Introduction to Docker
+### Module 1: [Docker and Terraform](./01-docker-terraform/README.md)
+- Introduction to containerization with Docker
+- Infrastructure as Code (IaC) with Terraform
+- Setting up development environments
 
-### Module 2: [Data Ingestion](./modules/module2/README.md)
-- Batch processing
-- Stream processing
-- ETL vs ELT
+### Module 2: [Workflow Orchestration](./02-workflow-orchestration/README.md)
+- Introduction to workflow orchestration
+- Using tools like Apache Airflow or Prefect
+- Designing and implementing data pipelines
 
-### Module 3: [Data Warehousing](./modules/module3/README.md)
-- Introduction to data warehouses
-- Setting up a data warehouse (e.g., BigQuery, Snowflake)
+### Module 3: [Data Ingestion & Data Warehouse](./03-Data%20Ingestion%20%26%20data-warehouse/README.md)
+- Batch and stream processing techniques
+- ETL vs ELT approaches
+- Setting up and using data warehouses (e.g., BigQuery, Snowflake)
 - Data modeling for analytics
 
-### Module 4: [Analytics Engineering](./modules/module4/README.md)
+### Module 4: [Analytics Engineering](./04-analytics-engineering/README.md)
 - Transforming data in the warehouse
 - Creating data models with dbt
 - Testing and documenting data pipelines
 
-### Module 5: [Batch Processing](./modules/module5/README.md)
+### Module 5: [Batch Processing](./05-batch/README.md)
 - Introduction to Apache Spark
 - Distributed computing concepts
-- Batch jobs with Spark
+- Implementing batch jobs with Spark
 
-### Module 6: [Streaming](./modules/module6/README.md)
-- Streaming concepts
-- Introduction to Apache Kafka
-- Building real-time data pipelines
-
-### Module 7: [Project](./modules/module7/README.md)
-- Capstone project combining all learned concepts
-- End-to-end data engineering solution
+### Module 6: [Streaming](./06-streaming/README.md)
+- Streaming concepts and architectures
+- Introduction to streaming technologies (e.g., Apache Kafka, Apache Flink)
+- Building and managing real-time data pipelines
 
 ## Prerequisites
 
@@ -109,27 +106,26 @@ Certainly! I'll update the README to use Poetry for setting up the project inste
   ```bash
   poetry run python your_script.py
   ```
-  
+
 ## Project Structure
 
 ```
 data-engineering-zoomcamp-2025/
 │
-├── modules/
-│   ├── module1/
-│   ├── module2/
-│   ├── module3/
-│   ├── module4/
-│   ├── module5/
-│   ├── module6/
-│   └── module7/
+├── 01-docker-terraform/
+├── 02-workflow-orchestration/
+├── 03-Data Ingestion & data-warehouse/
+├── 04-analytics-engineering/
+├── 05-batch/
+├── 06-streaming/
 │
 ├── data/
 ├── notebooks/
 ├── scripts/
 ├── tests/
 ├── .gitignore
-├── requirements.txt
+├── pyproject.toml
+├── poetry.lock
 └── README.md
 ```
 

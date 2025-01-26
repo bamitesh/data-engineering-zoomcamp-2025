@@ -10,6 +10,9 @@ readme = "README.md"
 python = "^3.11"
 pgcli = "^4.1.0"
 jupyter = "^1.1.1"
+sqlalchemy = "^2.0.37"
+pandas = "^2.2.3"
+psycopg2 = "^2.9.10"
 
 
 [build-system]
